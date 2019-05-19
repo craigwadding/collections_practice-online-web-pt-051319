@@ -37,3 +37,23 @@ def greater_and_less_than_10 (array)
   hash
 end 
 
+def find_winners (hash)
+  winners = []
+  hash.each do |name, status|
+    winners << name if status == "winner"
+  end
+  winners 
+end 
+
+def find_a (array)
+  array.select do |word|
+    word.chr == "a"
+  end 
+end 
+
+def sum_array (array)
+  array.inject do |sum, num|
+    sum + num
+  end
+end
+
